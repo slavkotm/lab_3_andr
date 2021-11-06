@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">app_name</string>
+    <string name="FN">Kot Slava</string>
+    <string name="edit">edit</string>
+    <string name="country_city_address">Belarus,Minsk,101</string>
+    <string name="comment">comment</string>
+    <string name="apply">apply</string>
+    <string name="cancel">cancel</string>
+    <string name="name">Name:</string>
+    <string name="firstname">First name:</string>
+</resources>
