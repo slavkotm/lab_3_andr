@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">app_name</string>
     <string name="FN">Kot Slava</string>
-    <string name="edit">edit</string>
+    <string name="edit" translatable="false">edit</string>
     <string name="country_city_address">Belarus,Minsk,101</string>
-    <string name="comment">comment</string>
+    <string name="comment" translatable="false">Comment:</string>
     <string name="apply">apply</string>
     <string name="cancel">cancel</string>
-    <string name="name">Name:</string>
-    <string name="firstname">First name:</string>
+    <string name="name" translatable="false">Name:</string>
+    <string name="firstname" translatable="false">First name:</string>
+    <string name="F">Kot</string>
+    <string name="N">SLava</string>
+    <string name="number" translatable="false">Number</string>
+    <string name="city" translatable="false">City:</string>
+    <string name="country" translatable="false">Country</string>
 </resources>

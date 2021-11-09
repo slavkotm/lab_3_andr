@@ -2,48 +2,45 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E1E0D4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="#E1E0D4"
     tools:context=".Edit_one_Activity">
 
     <TableRow>
-
         <TextView
             android:id="@+id/textview1_1"
+            android:textSize="22sp"
             android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="@string/firstname"
-            android:textSize="22sp" />
+            android:text="@string/firstname"/>
 
         <EditText
             android:id="@+id/edittext1_1"
+            android:textSize="22sp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="@string/F"
-            android:textSize="22sp" />
+            android:text="@string/F" />
     </TableRow>
 
     <TableRow>
-
         <TextView
             android:id="@+id/textview1_2"
+            android:textSize="22sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/name"
-            android:textSize="22sp" />
+            android:text="@string/name"/>
 
         <EditText
             android:id="@+id/edittext1_2"
+            android:textSize="22sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/N"
-            android:textSize="22sp" />
+            android:text="@string/N" />
     </TableRow>
 
     <TableRow>
-
         <Button
             android:id="@+id/button1_1"
             android:layout_width="wrap_content"
@@ -51,7 +48,8 @@
             android:layout_span="2"
             android:background="#11FF00"
             android:text="@string/apply"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            />
     </TableRow>
 
     <TableRow>

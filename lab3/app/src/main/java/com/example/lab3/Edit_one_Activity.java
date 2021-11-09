@@ -13,34 +13,36 @@ import android.widget.TextView;
 public class Edit_one_Activity extends AppCompatActivity {
 
     private Button button, cancel;
-    private TextView textView;
     private EditText answer1, answer2;
+    private String fname_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_one);
 
-        Bundle bundle = this.getIntent().getExtras();
+        Intent intent = getIntent();
 
+        fname_name = intent.getStringExtra(MainActivity.Firstname_name);
 
-        this.textView = (TextView) this.findViewById(R.id.edittext1_1);
-        this.textView.setText(bundle.getString("text_for_edit"));
-        String pred_last_result = this.textView.getText().toString();
-        String[] sep = pred_last_result.split(" ");
+        String [] spl_on_strings = fname_name.split(" ", 2);
 
 
         this.answer1 = (EditText) this.findViewById(R.id.edittext1_1);
         this.answer2 = (EditText) this.findViewById(R.id.edittext1_2);
 
 
+        this.answer1.setText(spl_on_strings[0]);
+        this.answer2.setText(spl_on_strings[1]);
+
         this.button = (Button)findViewById(R.id.button1_1);
         this.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent returnIntent = new Intent();
-                returnIntent.putExtra("answer", Edit_one_Activity.this.answer1.getText().toString() +
-                                                        Edit_one_Activity.this.answer2.getText().toString());
+                String firstname = answer1.getText().toString();
+                String name = answer2.getText().toString();
+                returnIntent.putExtra(MainActivity.Firstname_name,firstname + " " + name);
                 Edit_one_Activity.this.setResult(Activity.RESULT_OK, returnIntent);
                 Edit_one_Activity.this.finish();
             }
@@ -50,9 +52,7 @@ public class Edit_one_Activity extends AppCompatActivity {
         this.cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent returnIntent = new Intent();
-                returnIntent.putExtra("answer", pred_last_result);
-                Edit_one_Activity.this.setResult(Activity.RESULT_CANCELED, returnIntent);
+                Edit_one_Activity.this.setResult(Activity.RESULT_CANCELED);
                 Edit_one_Activity.this.finish();
             }
         });

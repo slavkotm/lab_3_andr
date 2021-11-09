@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app_name</string>
+    <string name="number" translatable="false">Номер</string>
+    <string name="city" translatable="false">Страна</string>
+    <string name="country" translatable="false">Страна</string>
+    <string name="firstname" translatable="false">Фамилия</string>
+    <string name="name" translatable="false">Имя</string>
+    <string name="comment" translatable="false">Комментарий</string>
+    <string name="edit" translatable="false">редактировать</string>
+</resources>
