@@ -20,10 +20,8 @@ public class Edit_three_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_three);
 
-
-        Intent intent = getIntent();
-
-        comment = intent.getStringExtra(MainActivity.Comment);
+        Bundle extras = getIntent().getExtras();
+        comment = extras.getString(MainActivity.Comment);
 
         this.answer1 = (EditText) this.findViewById(R.id.edittext3_1);
 

@@ -21,9 +21,10 @@ public class Edit_one_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_one);
 
-        Intent intent = getIntent();
 
-        fname_name = intent.getStringExtra(MainActivity.Firstname_name);
+        Bundle extras = getIntent().getExtras();
+        fname_name = extras.getString(MainActivity.Firstname_name);
+
 
         String [] spl_on_strings = fname_name.split(" ", 2);
 

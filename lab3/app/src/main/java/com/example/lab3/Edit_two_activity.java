@@ -21,11 +21,8 @@ public class Edit_two_activity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_two);
 
 
-
-
-        Intent intent = getIntent();
-
-        address_= intent.getStringExtra(MainActivity.Address);
+        Bundle extras = getIntent().getExtras();
+        address_ = extras.getString(MainActivity.Address);
 
         String [] spl_on_strings = address_.split(",", 3);
 
