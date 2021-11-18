@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lab_4</string>
+    <string name="FN" translatable="false">Kot Slava</string>
+    <string name="edit" translatable="false">edit</string>
+    <string name="country_city_address" translatable="false">Belarus,Minsk,101</string>
+    <string name="comment" translatable="false">Comment</string>
+    <string name="apply" translatable="false">apply</string>
+    <string name="cancel" translatable="false">cancel</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="firstname" translatable="false">First name</string>
+    <string name="F" translatable="false">Kot</string>
+    <string name="N" translatable="false">SLava</string>
+    <string name="number" translatable="false">Number</string>
+    <string name="city" translatable="false">City</string>
+    <string name="country" translatable="false">Country</string>
+</resources>

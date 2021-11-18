@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview3_1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/comment"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext3_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edittext3_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="comment"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview3_1" />
+
+    <Button
+        android:id="@+id/button3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_span="2"
+        android:background="#11FF00"
+        android:text="@string/apply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext3_1" />
+
+    <Button
+        android:id="@+id/button3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:layout_span="2"
+        android:background="#FF0000"
+        android:text="@string/cancel"
+        app:layout_constraintStart_toEndOf="@+id/button3_1"
+        app:layout_constraintTop_toBottomOf="@+id/edittext3_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
